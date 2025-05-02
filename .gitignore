@@ -1,0 +1,22 @@
+# Ignore virtual environments
+venv/
+nycenv/
+.env/
+
+# Ignore dataset and cache
+*.csv
+*.zip
+*.tar.gz
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Jupyter logs or metadata
+*.log
+.Rhistory
