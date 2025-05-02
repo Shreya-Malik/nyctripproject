@@ -63,12 +63,13 @@ Data Cleanup
 -> Final cleaned dataset used consistently in all tasks
 
 ## Key Analytical Tasks
-Task-Range	   Description
-1–5	           Filtering, missing values, duration calculation
-6–9	           Time-based grouping and passenger/fare trends
-10–12	         Peak interval detection and top-fare locations
-13–16	         Fare comparison for common vs. full trips
-17	           Chain detection using vectorized time/location logic
+| Task Range | Description                                         |
+|------------|-----------------------------------------------------|
+| 1–5        | Filtering, missing values, duration calculation     |
+| 6–9        | Time-based grouping and passenger/fare trends       |
+| 10–12      | Peak interval detection and top-fare locations      |
+| 13–16      | Fare comparison for common vs. full trips           |
+| 17         | Chain detection using vectorized time/location logic |
 
 ## Deliverables
 -> Jupyter Notebook (nyc_trip_analysis_cleaned.ipynb)
