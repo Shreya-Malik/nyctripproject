@@ -71,7 +71,7 @@ Task-Range	   Description
 17	           Chain detection using vectorized time/location logic
 
 ## Deliverables
--> Jupyter Notebook (nyc_taxi_analysis.ipynb)
+-> Jupyter Notebook (nyc_trip_analysis_cleaned.ipynb)
 -> Clean and modular code with clear outputs
 -> Final df_sorted containing all chained trips
 -> Intermediate CSVs saved for inspection (invalid_duration, chained_trips_full, etc.)
