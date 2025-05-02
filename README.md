@@ -1,6 +1,6 @@
 # NYC Taxi Fare Project
 
-This project analyzes taxi trip data using NYC Trip Fare repository.
+This project analyzes taxi trip data using NYC Trip Fare repository.It focuses on data cleaning, transformation, and insightful exploration through 17 structured tasks.
 
 ## Folder Structure
 
@@ -16,12 +16,14 @@ nyc-taxi-project/
 
 ## Objectives
 
-The goal is to perform a series of data wrangling and analysis tasks on the NYC Trip Fare, including:
-- Filtering invalid trips
-- Aggregating fare data
-- Clustering pickup intervals
-- Building chains of trips
-- Generating insights from fare patterns
+The notebook performs the following:
+
+-> Data cleaning: handle nulls, invalid and possibly canceled trips
+-> Aggregation: compute statistics by pickup/dropoff location and time intervals
+-> Grouped analysis: identify high-revenue locations and intervals
+-> Clustering of pickup times into 30-minute intervals
+-> Pattern discovery: compare common vs. full trip routes
+-> Chaining logic: detect trip sequences based on time and location continuity
 
 ## Getting Started
 
@@ -52,3 +54,29 @@ Download the dataset from Kaggle:
 https://www.kaggle.com/datasets/diishasiing/revenue-for-cab-drivers
 
 Unzip it and place `revenue.csv` in the `data/` folder.
+
+## Final Analysis Summary
+
+Data Cleanup
+-> Memory-efficient loading with dtype
+-> Removal of invalid trips (nulls, negatives, outliers)
+-> Final cleaned dataset used consistently in all tasks
+
+## Key Analytical Tasks
+Task-Range	   Description
+1–5	           Filtering, missing values, duration calculation
+6–9	           Time-based grouping and passenger/fare trends
+10–12	         Peak interval detection and top-fare locations
+13–16	         Fare comparison for common vs. full trips
+17	           Chain detection using vectorized time/location logic
+
+## Deliverables
+-> Jupyter Notebook (nyc_taxi_analysis.ipynb)
+-> Clean and modular code with clear outputs
+-> Final df_sorted containing all chained trips
+-> Intermediate CSVs saved for inspection (invalid_duration, chained_trips_full, etc.)
+
+
+
+
+
